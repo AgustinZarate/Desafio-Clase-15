@@ -1,0 +1,28 @@
+$maps: (
+    /* colores */
+    white: white,
+    black: black,
+    beige:#e4e4e3,
+    yellow:#FCBF49,
+    orange:#F77F00,
+    red:#D62828,
+    blue:#003049,
+
+    /* bordes */
+    border-1: 1px solid black,
+    border-2: 4px solid black,
+
+    /* box-shadow */
+    box-shadow-1: 20px 15px 25px rgba(0, 0, 0, 0.300),
+    box-shadow-2: 20px 15px 25px rgba(0, 0, 0, 0.600),
+    box-shadow-3: 20px 15px 25px rgba(0, 0, 0, 0.900),
+
+    /* Animaciones a Noticias y noticias destacadas*/
+    scale-standard: scale(1.1),
+    scale-medium: scale(1.2),
+    scale-big: scale(1.4),
+    all-1s: all 1s,
+    all-2s: all 2s,
+    all-3s: all 3s,
+
+) 

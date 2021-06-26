@@ -1,0 +1,97 @@
+@import "../components/extend";
+@import "../components/variables";
+@import "../components/condicion";
+@import "../components/maps";
+
+/*-------------- CARROUSEL --------------------*/
+.carousel {
+    border-radius: 10px;
+    background-color: nth($bg-color ,2 );
+    padding: 10px;
+    border: solid 2px black;
+}
+
+.carousel:hover {
+    background-color: nth($bg-color , 4 );
+}
+
+.carousel-control-prev-icon {
+    border-radius: 30px;
+    background-color: nth($bg-color, 8 );
+    padding-top: 10rem;
+}
+.carousel-control-prev-icon:hover {
+    background-color: nth($bg-color, 9 );
+}
+.carousel-control-next-icon{
+    border-radius: 30px;
+    background-color: nth($bg-color, 8 );
+    padding-top: 10rem;
+}
+.carousel-control-next-icon:hover {
+    background-color: nth($bg-color, 9 );
+}
+
+.imagen-noticia {
+    transition: map-get($maps, all-2s);
+    &:hover {
+        transition: map-get($maps, all-1s);
+        transform: map-get($maps, scale-standard);
+    }
+
+}
+/* BOTONES "AFECTA A TODOS LOS BOTONES EJ: DROPDOWN  USAR EXTEND, PARA DARLE EXCATAMENTE LOS MISMOS ESTILOS"*/
+
+
+
+.btn {
+    @extend %boton;
+}
+
+/* Foto boton destacado */
+.foto-destacado {
+    transition: map-get($maps, all-2s);
+    height: 30rem;
+        &:hover {
+            transition: map-get($maps, all-1s);
+            transform: scale(1.080);
+            box-shadow: 20px 15px 15px rgba(0, 0, 0, 0.479);
+        }
+}
+
+/* MODAL OSCAR ROMERO */
+.modal-content {
+    background-color: nth($bg-color, 1);
+}
+.modal-body {
+    ul {
+        list-style: none;
+        li {
+            
+            list-style: none;
+        }
+    }
+}
+
+.box-romero {
+    padding-left: 0.3rem;
+    margin-right: 1.5rem;
+    text-align: start;
+    color: map-get($maps , white );
+    margin-bottom: 0.5rem;
+    background-color: nth($bg-color, 4 );
+}
+
+.li-box-romero {
+    color: map-get($maps , white );
+    line-height: 2rem;
+    padding-left: 0.3rem;
+    margin-right: 1.5rem;
+    background-color: nth($bg-color, 5 );
+}
+
+.video-destacado {
+    @include condicion (#003049);
+    padding: 5px;
+    height: 25rem;
+}

@@ -1,0 +1,54 @@
+/*-------------------------------------- HTML NOTICIAS -------------------------------*/
+@import "../components/variables";
+.enlace-noticia{
+    background-color: #003049;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 10px;
+    margin: 15px;
+}
+
+.li-noticia {
+    color: white;
+    text-align: center;
+    background-color: #003049;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px 10px;
+    margin: 15px;
+        a {
+            color: white;
+            text-decoration: none;
+    }
+}
+.foto-noticia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style-type: none;
+    pointer-events: auto;
+    background-color: nth($bg-color , 6 );
+    width: 40rem;
+    height: 27rem;
+    padding: 20px;
+    margin: 50px;
+    /* border: solid 1px #FCBF49; */
+    border-radius: 6px;
+    box-shadow: 20px 15px 25px nth($bg-color, 9 );
+    transition: map-get($maps , all-2s );
+        &:hover {
+            transition: map-get($maps, all-1s);
+            transform: map-get($maps, scale-standard);
+        }
+}
+
+
+
+
+
+
+

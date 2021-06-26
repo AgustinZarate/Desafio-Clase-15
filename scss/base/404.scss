@@ -1,0 +1,32 @@
+.h1-error {
+    font-size: 3rem;
+}
+
+.nav-404 {
+    border-collapse:separate ;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    ul {
+        align-content: center;
+        list-style: none;
+
+        li {
+            display: block;
+            background-color: black;
+            border: 1px solid #003049;
+            border-radius: 6rem;
+            margin: 2rem;
+            &:hover {
+                background-color: #D62828;
+            }
+            a {
+                width: 100%;
+                color: white;
+                text-decoration: none;
+                font-size: 2rem;
+            }
+        }
+    }
+}

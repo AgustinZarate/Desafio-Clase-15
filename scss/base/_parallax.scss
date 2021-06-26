@@ -1,0 +1,12 @@
+@import "../components/extend";
+/* Parallax Principal */
+.parallax-header {
+    background-image: url("../img/index/fondo-romero.jpg");
+    @extend %parallax;
+}
+
+/* Parallax Secundario/ Separador Seccion Destacados a Seccion Torneos */
+.parallax-main {
+    background-image: url("../img/index/fondo-torneos-2.jpg");
+    @extend %parallax;
+}

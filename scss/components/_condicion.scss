@@ -1,0 +1,9 @@
+@mixin condicion($colorif) {
+    background-color: $colorif;
+
+    @if $colorif == #003049 {
+        border: 2px solid #D62828;
+    } @else {
+        border: 2px solid black;
+    }
+}

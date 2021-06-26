@@ -1,0 +1,19 @@
+@import "../components/variables";
+
+.navbar {
+    color: white;
+    background-color: nth($bg-color, 5) !important;
+    .navbar-collapse {
+        flex-grow: unset;
+        .navbar-nav {
+            a {
+                margin: 0.5rem;
+                font-size: 1.2rem;
+                color: white;
+                &:hover {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

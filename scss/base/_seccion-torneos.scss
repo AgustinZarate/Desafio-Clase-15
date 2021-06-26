@@ -1,0 +1,54 @@
+@import "../components/variables";
+@import "../components/maps";
+.logo-tablas{
+    margin-top: 2rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+table {
+    box-shadow: map-get($maps, box-shadow-1 );
+    border: solid 2px black
+}
+.table, tr, th, td  {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                border: map-get($maps, border-1);
+                border-collapse: collapse;
+                text-align: center;
+                width: 20rem;
+                height: 1.5rem;
+                }
+    .th-table {
+        background-color: violet;
+    }
+    .th-table-copa{
+        background-color: rgb(0, 89, 255);
+    }
+    .td-clasificado {
+        background-color: nth($bg-color , 2 );
+    } 
+
+    .dropdown {
+        position: absolute;
+        margin-top: 0.2rem;
+        margin-left: 12rem;
+    }
+    
+    .cuadro-copa {
+        border-radius: 6px;
+        border: map-get($maps, border-2 );
+        box-shadow: map-get($maps,box-shadow-3 );
+    }
+
+    .twitter {
+        margin: 1rem;
+        }
+        
+        .instagram {
+            margin: 0;
+            padding: 8rem;
+        }
+        
+        .spotify {
+            margin-right: 5rem;
+        }

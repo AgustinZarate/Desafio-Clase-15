@@ -1,0 +1,50 @@
+
+@import "../components/variables";
+/* USAR MIXIN PARA DARLE LOS MISMOS ESTILOS PERO CAMBIAR FONDO O ALGO MAS */
+
+@mixin  encabezados ($bg-color, $font, $margin, $padding) {
+    background-color: $bg-color;
+    font-size: $font;
+    margin: $margin;
+    padding: $padding;
+    color: white;
+    text-align: center;
+}
+h2 {
+    @include encabezados(#D62828, 2.5rem, auto, 2.5rem)
+}
+
+
+    
+    .contenedor-h2 {
+        box-shadow: 20px 15px 25px rgba(0, 0, 0, 0.774);
+    }
+
+/* subtitulo de seccion */
+h3 {
+    @include encabezados(#003049, 2.0rem, 0.5rem, 0.5rem)
+}
+/* Standar para parrafos */
+p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+
+.parrafo-noticia {
+    list-style-type: none;
+    pointer-events: auto;
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 40px;
+    text-indent: 40px;
+    padding: 20px;
+}
+
+/* Parrafo de tablas */
+.parrafo-tablas {
+    font-size: 18px;
+    line-height: 35px;
+    padding: 30px 15px;
+}

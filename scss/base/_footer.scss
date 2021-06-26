@@ -1,0 +1,128 @@
+@import "../components/variables";
+/* --------------------------footer---------------------------------- */
+    footer {
+        background-color: nth($bg-color , 5 );
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+        color: #ffebcd;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        box-sizing: border-box;
+        margin-right: 0;
+        margin-top: 8rem;
+        padding: 2rem;
+        background-color: #151515;
+        background-image: repeating-linear-gradient(#D62828, #003049);
+        height: auto;
+        text-align: center;
+    }
+    .avatar {
+        width: 100px;
+        height: 100px;
+            /* Width=alto  x  Height=ancho */
+    }
+    .sticky  {
+        /* Mas alla de donde este posicionado, cuando llegue a una altura que yo le indique se queda pegado */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    }
+    
+    
+    
+    .pie-de-pagina {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #contacto {
+        margin: 25px;
+    }
+    
+    .redes-pie-de-pagina {
+        margin: 20px;
+        padding: 0;
+    }
+    
+    .redes-footer {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a {
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+    }
+    
+    .conteiner-avatar {
+        display: flex;
+        justify-content: end;
+        color: white;
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    form {
+    background-color: nth($bg-color , 6 );
+    font-weight: 400;
+    line-height: 1.5;
+    color: #151515;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 2rem 0 0;
+    font-size: 1.2rem;
+    
+    }
+    
+    .nombre-form{
+        margin: 1rem;
+    }
+
+    .email-form {
+        margin: 1rem;
+    }
+    
+    .pais-form {
+        margin: 10px 10px;
+    }
+    
+    .edad-form {
+        margin: 1rem;
+    }
+
+    .textarea-form {
+        margin: 1rem;
+        height: 150px;
+
+    }
+    
+    .radio-inline {
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 1.4rem;
+        color: black;
+        margin: 1rem;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    
+    .container-btn {
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .btn-form {
+        @extend %boton;
+    }
+    /* --------------------------fin footer---------------------------------- */
+

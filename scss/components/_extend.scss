@@ -1,0 +1,29 @@
+%boton {
+    margin-top: 0.3rem;
+    width: 19rem;
+    border: solid 2px black;
+    background-color: nth($bg-color, 2 );
+    &:hover {
+        background-color: nth($bg-color, 4 );
+    }
+    &:active {
+        background-color: nth($bg-color , 4 );
+    }
+}
+
+
+%parallax {
+    min-height: 100vh;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+%flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
