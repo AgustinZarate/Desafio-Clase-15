@@ -7,5 +7,13 @@
   },
   "author": "f",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgustinZarate/Desafio-Clase-15.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AgustinZarate/Desafio-Clase-15/issues"
+  },
+  "homepage": "https://github.com/AgustinZarate/Desafio-Clase-15#readme",
   "description": ""
 }

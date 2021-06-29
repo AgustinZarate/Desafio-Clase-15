@@ -4,6 +4,20 @@
 @import "../components/maps";
 
 /*-------------- CARROUSEL --------------------*/
+h5 {
+    background-color: rgba(0, 0, 0, 0.397);
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    border: map-get($maps , border-1 )
+
+}
+
+.p-carrousel {
+    font-family: Arial, Helvetica, sans-serif;
+    border: map-get($maps , border-1 );
+    background-color: rgba(0, 0, 0, 0.397);
+}
+
 .carousel {
     border-radius: 10px;
     background-color: nth($bg-color ,2 );

@@ -1,6 +1,11 @@
 @import "../components/variables";
-
+main {
+    padding-top: 6rem;
+}
 .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
     color: white;
     background-color: nth($bg-color, 5) !important;
     .navbar-collapse {
