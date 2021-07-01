@@ -245,11 +245,15 @@ table {
 }
 
 .instagram {
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .spotify {
-  margin: 1rem 2rem;
+  margin: 1rem 3rem;
+}
+
+.tiktok-embed {
+  padding: 0 3rem;
 }
 
 .form {
