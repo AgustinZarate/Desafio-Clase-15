@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+main {
+    padding-top: 6rem;
+}
 body {
     background-color: #EAE2B7;
 }
@@ -16,7 +19,7 @@ body {
 /*-------------------------------------- SECCION DE TABLAS---------------------------- */
 @import "../scss/base/seccion-torneos";
 /*--------------------------------------------------------------- HTML VARIOS ----------------------------------*/
-@import "../scss/base/html-noticias";
+@import "../scss/base/html-actualidad";
 /* ----------------------------------------------FOOTER -------------------------------------------------------------*/
 @import "../scss/base/footer";
 /*--------------------------------------- TIPOGRAFIA---------------------------------------- */

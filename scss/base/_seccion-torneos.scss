@@ -40,22 +40,8 @@ table {
         box-shadow: map-get($maps,box-shadow-3 );
     }
 
-    .twitter {
-        margin: 1rem 2rem;
-        }
-        
-        .instagram {
-            padding: 2rem 1rem;
-        }
-        
-        .spotify {
-            margin: 1rem 3rem;
-        }
-        
-        .tiktok-embed {
-            padding: 0 3rem;
-        }
-
-        .form {
-            margin: 5rem;
-        }
+.section-redes {
+    background-color: nth($bg-color , 5 );
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}

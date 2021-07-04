@@ -27,6 +27,8 @@
             text-decoration: none;
     }
 }
+
+
 .foto-noticia {
     font-family: Georgia, 'Times New Roman', Times, serif;
     list-style-type: none;
@@ -46,6 +48,18 @@
         }
 }
 
+@media only screen and (min-width: 360px) and (max-width: 991px) {
+    .foto-noticia {
+        width: 100%;
+        width: 1rem;
+        height: 1rem;
+        transition: none;
+        &:hover {
+            transition: none;
+            transform: none;
+        }
+    }
+}
 
 
 

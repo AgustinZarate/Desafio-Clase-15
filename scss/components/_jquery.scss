@@ -17,11 +17,28 @@
         border-color: rgba(0,0,0,.1);
         border: map-get($maps , box-shadow-3);
     }
-    /* MAIN */
+    /* ------------------------------------------------------------------------MAIN --------------------------------------------*/
+    /* -------------------------------------------------------SECCION DESTACADOS------------------------------------------------ */
+    .btn-primary {
+        display: none;
+    }
     .sec-destacados {
         display: flex;
         flex-direction: column;
     }
+    /* carrousel centrado */
+.col-8 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.carousel {
+    padding: 0;
+    width: 100%;
+}
+    /* Tipografia */
+h1 {
+    font-size: 1.5rem !important;
+}
 h2 {
     font-size: 2rem;
 }
@@ -34,19 +51,7 @@ h3{
 .h3-n-destacado {
     margin-top: 0;
 }
-
-.btn {
-    display: none;
-}
-/* CARRUOUSEL CENTRADO */
-.col-8 {
-    flex: 0 0 auto;
-    width: 100%;
-}
-.carousel {
-    padding: 0;
-    width: 100%;
-}
+/* ------------------------------------------------------------SECCION TORNEOS------------------------------------------------------- */
 .container-youtube {
 display: flex;
 flex-direction: column;
@@ -55,24 +60,22 @@ flex-direction: column;
     display: none;
 }
 /* arrgla seccion tablas */
+.logo-p-tabla {
+    display: flex;
+    flex-direction: column;
+}
 .col-6 {
     flex: 0 0 auto;
     width: 100%;
 }
-
-.twitter {
-margin: 1rem;
+/* -----------------------------------------SECCION REDES */
+.col-4 {
+    flex: 0 0 auto;
+    width: 100%;
 }
-
-.instagram {
-    margin: 0;
-    padding: 8rem;
+.container-tiktok {
+    display: none;
 }
-
-.spotify {
-    margin-right: 5rem;
-}
-
 
 /*------------------------ FOOTER -----------------------*/
 .redes-footer{

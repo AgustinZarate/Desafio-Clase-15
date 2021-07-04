@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+main {
+  padding-top: 6rem;
+}
+
 body {
   background-color: #EAE2B7;
 }
@@ -10,10 +14,6 @@ body {
 /*---------------------------------------------------- HEADER-------------------------------------------------------------------------------- */
 /* Lista Colores */
 /* carrusel HOVER */
-main {
-  padding-top: 6rem;
-}
-
 .navbar {
   position: fixed;
   width: 100%;
@@ -94,7 +94,7 @@ main {
 /* carrusel HOVER */
 /*-------------- CARROUSEL --------------------*/
 h5 {
-  background-color: rgba(0, 0, 0, 0.397);
+  background-color: rgba(0, 0, 0, 0.473);
   font-family: "Times New Roman", Times, serif;
   border-radius: 20px;
   border: 1px solid black;
@@ -103,7 +103,7 @@ h5 {
 .p-carrousel {
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid black;
-  background-color: rgba(0, 0, 0, 0.397);
+  background-color: white;
 }
 
 .carousel {
@@ -240,24 +240,10 @@ table {
   box-shadow: 20px 15px 25px rgba(0, 0, 0, 0.9);
 }
 
-.twitter {
-  margin: 1rem 2rem;
-}
-
-.instagram {
-  padding: 2rem 1rem;
-}
-
-.spotify {
-  margin: 1rem 3rem;
-}
-
-.tiktok-embed {
-  padding: 0 3rem;
-}
-
-.form {
-  margin: 5rem;
+.section-redes {
+  background-color: #003049;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /*--------------------------------------------------------------- HTML VARIOS ----------------------------------*/
@@ -311,6 +297,18 @@ table {
   transform: scale(1.1);
 }
 
+@media only screen and (min-width: 360px) and (max-width: 991px) {
+  .foto-noticia {
+    width: 100%;
+    width: 1rem;
+    height: 1rem;
+    transition: none;
+  }
+  .foto-noticia:hover {
+    transition: none;
+    transform: none;
+  }
+}
 /* ----------------------------------------------FOOTER -------------------------------------------------------------*/
 /* Lista Colores */
 /* carrusel HOVER */
@@ -528,10 +526,31 @@ p {
     border: 20px 15px 25px rgba(0, 0, 0, 0.9);
   }
 
-  /* MAIN */
+  /* ------------------------------------------------------------------------MAIN --------------------------------------------*/
+  /* -------------------------------------------------------SECCION DESTACADOS------------------------------------------------ */
+  .btn-primary {
+    display: none;
+  }
+
   .sec-destacados {
     display: flex;
     flex-direction: column;
+  }
+
+  /* carrousel centrado */
+  .col-8 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .carousel {
+    padding: 0;
+    width: 100%;
+  }
+
+  /* Tipografia */
+  h1 {
+    font-size: 1.5rem !important;
   }
 
   h2 {
@@ -550,21 +569,7 @@ p {
     margin-top: 0;
   }
 
-  .btn {
-    display: none;
-  }
-
-  /* CARRUOUSEL CENTRADO */
-  .col-8 {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-
-  .carousel {
-    padding: 0;
-    width: 100%;
-  }
-
+  /* ------------------------------------------------------------SECCION TORNEOS------------------------------------------------------- */
   .container-youtube {
     display: flex;
     flex-direction: column;
@@ -575,22 +580,24 @@ p {
   }
 
   /* arrgla seccion tablas */
+  .logo-p-tabla {
+    display: flex;
+    flex-direction: column;
+  }
+
   .col-6 {
     flex: 0 0 auto;
     width: 100%;
   }
 
-  .twitter {
-    margin: 1rem;
+  /* -----------------------------------------SECCION REDES */
+  .col-4 {
+    flex: 0 0 auto;
+    width: 100%;
   }
 
-  .instagram {
-    margin: 0;
-    padding: 8rem;
-  }
-
-  .spotify {
-    margin-right: 5rem;
+  .container-tiktok {
+    display: none;
   }
 
   /*------------------------ FOOTER -----------------------*/
