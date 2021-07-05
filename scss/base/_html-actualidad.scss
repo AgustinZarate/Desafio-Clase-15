@@ -1,5 +1,9 @@
 /*-------------------------------------- HTML NOTICIAS -------------------------------*/
 @import "../components/variables";
+.ult-noticias {
+    background-image: repeating-linear-gradient(#d64228, #003049);
+}
+
 .enlace-noticia{
     background-color: #003049;
     list-style-type: none;
