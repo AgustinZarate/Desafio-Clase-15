@@ -24,6 +24,17 @@ h2 {
 h3 {
     @include encabezados(#003049, 2.0rem, 0.5rem, 0.5rem)
 }
+ .title-carrousel {
+    border-radius: 20px;
+ }
+
+h5 {
+    padding: 0.5rem;
+    color: map-get($maps, white );
+    background-color: nth($bg-color, 5 );
+    font-family: 'Times New Roman', Times, serif;
+    border: map-get($maps , border-1 )
+}
 /* Standar para parrafos */
 p {
     font-size: 20px;
@@ -47,4 +58,9 @@ p {
     font-size: 18px;
     line-height: 35px;
     padding: 30px 15px;
+}
+
+a {
+    text-decoration: none;
+    color: map-get($maps, white );
 }

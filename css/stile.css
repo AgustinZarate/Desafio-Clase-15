@@ -8,7 +8,7 @@ main {
 }
 
 body {
-  background-color: white;
+  background-color: #9e1616;
 }
 
 /*---------------------------------------------------- HEADER-------------------------------------------------------------------------------- */
@@ -162,6 +162,13 @@ body {
 }
 .modal-body ul li {
   list-style: none;
+}
+
+h5 {
+  background-color: rgba(185, 0, 0, 0.473);
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 20px;
+  border: 1px solid black;
 }
 
 .box-romero {
@@ -474,18 +481,6 @@ h3 {
   text-align: center;
 }
 
-.title-carrousel {
-  border-radius: 20px;
-}
-
-h5 {
-  padding: 0.5rem;
-  color: white;
-  background-color: #003049;
-  font-family: "Times New Roman", Times, serif;
-  border: 1px solid black;
-}
-
 /* Standar para parrafos */
 p {
   font-size: 20px;
@@ -509,11 +504,6 @@ p {
   font-size: 18px;
   line-height: 35px;
   padding: 30px 15px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
 }
 
 /* -------------------------------@media query------------------------------------------- */
@@ -678,15 +668,6 @@ a {
   .container-p-noticia {
     width: 100%;
   }
-
-  /* HTML ACTUALIDAD */
-  .card-title {
-    font-size: 1rem;
-  }
-
-  .card-text {
-    font-size: 1rem;
-  }
 }
 /*------------------------------------ ERROR 404 --------------------------------*/
 .h1-error {
@@ -721,4 +702,4 @@ a {
   font-size: 2rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stile.css.map */

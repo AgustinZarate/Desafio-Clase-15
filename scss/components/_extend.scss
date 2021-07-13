@@ -1,8 +1,9 @@
 %boton {
+    color: black;
     margin-top: 0.3rem;
     width: 19rem;
     border: solid 2px black;
-    background-color: nth($bg-color, 2 );
+    background-color: nth($bg-color, 1 );
     &:hover {
         background-color: nth($bg-color, 4 );
     }

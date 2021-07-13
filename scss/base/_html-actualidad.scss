@@ -1,7 +1,23 @@
 /*-------------------------------------- HTML NOTICIAS -------------------------------*/
 @import "../components/variables";
 .ult-noticias {
-    background-image: repeating-linear-gradient(#d64228, #003049);
+    background-image: repeating-linear-gradient(white, #003049);
+}
+
+.card {
+    padding: 1rem;
+    box-shadow: 20px 15px 25px nth($bg-color, 9 );
+    
+}
+
+.img-card {
+    transition: map-get($maps , all-2s );
+    &:hover {
+        transition: map-get($maps, all-1s);
+        transform: map-get($maps, scale-low);
+        box-shadow: map-get($maps, box-shadow-2 );
+        
+    }
 }
 
 .enlace-noticia{

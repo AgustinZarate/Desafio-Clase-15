@@ -4,13 +4,7 @@
 @import "../components/maps";
 
 /*-------------- CARROUSEL --------------------*/
-h5 {
-    background-color: rgba(0, 0, 0, 0.473);
-    font-family: 'Times New Roman', Times, serif;
-    border-radius: 20px;
-    border: map-get($maps , border-1 )
 
-}
 
 .p-carrousel {
     font-family: Arial, Helvetica, sans-serif;
@@ -20,7 +14,7 @@ h5 {
 
 .carousel {
     border-radius: 10px;
-    background-color: nth($bg-color ,2 );
+    background-color: nth($bg-color ,1 );
     padding: 10px;
     border: solid 2px black;
 }
@@ -87,6 +81,8 @@ h5 {
     }
 }
 
+
+
 .box-romero {
     padding-left: 0.3rem;
     margin-right: 1.5rem;
@@ -107,5 +103,6 @@ h5 {
 .video-destacado {
     @include condicion (#003049);
     padding: 5px;
-    height: 25rem;
+    margin-left: 2.5rem;
+    height: 20.7rem;
 }
