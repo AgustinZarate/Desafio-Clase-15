@@ -231,6 +231,7 @@ table {
 }
 
 .cuadro-copa {
+  width: 100%;
   border-radius: 6px;
   border: 4px solid black;
   box-shadow: 20px 15px 25px rgba(0, 0, 0, 0.9);
@@ -323,6 +324,45 @@ table {
     transform: none;
   }
 }
+.square1, .square2 {
+  border-radius: 4px;
+  height: 25.4rem;
+  width: 20rem;
+  margin-top: 1rem;
+}
+
+.square1 {
+  background-color: teal;
+  position: relative;
+  z-index: 0;
+}
+
+.square2 {
+  background-color: steelblue;
+  transition: all 0.8s;
+  position: absolute;
+  z-index: 1;
+}
+
+.square2:hover {
+  opacity: 0;
+  transform: translate(20px, 20px);
+  background-color: transparent;
+}
+
+.arqueros {
+  position: relative;
+}
+
+.arqueros1 {
+  position: absolute;
+}
+
+.defensores {
+  position: absolute;
+  background-color: red;
+}
+
 /* ----------------------------------------------FOOTER -------------------------------------------------------------*/
 /* Lista Colores */
 /* carrusel HOVER */
