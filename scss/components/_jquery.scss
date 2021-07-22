@@ -3,142 +3,169 @@
 @import "../components/variables";
 @import "../components/condicion";
 @import "../components/maps";
+
 /* @query mas grande */
 @media only screen and (min-width: 992px) {
     .sec-destacados {
         display: flex;
     }
 }
+
 /* @query mas chica */
 @media only screen and (min-width: 360px) and (max-width: 991px) {
+
     /* HEADER */
     .navbar-light .navbar-toggler {
-        background-color: nth($bg-color , 4 );
-        border-color: rgba(0,0,0,.1);
-        border: map-get($maps , box-shadow-3);
+        background-color: nth($bg-color, 4);
+        border-color: rgba(0, 0, 0, .1);
+        border: map-get($maps, box-shadow-3);
     }
+
     /* ------------------------------------------------------------------------MAIN --------------------------------------------*/
     /* -------------------------------------------------------SECCION DESTACADOS------------------------------------------------ */
     .btn-primary {
         display: none;
     }
+
     .sec-destacados {
         display: flex;
         flex-direction: column;
     }
+
     /* carrousel centrado */
-.col-8 {
-    flex: 0 0 auto;
-    width: 100%;
-}
-.carousel {
-    padding: 0;
-    width: 100%;
-}
+
+
+    .carousel {
+        padding: 0;
+        width: 100%;
+    }
+
     /* Tipografia */
-h1 {
-    font-size: 1.5rem !important;
-}
-h2 {
-    font-size: 2rem;
-}
-h3{
-    font-size: 1.1rem;
-}
-.h3-j-destacado {
-    display: none;
-}
-.h3-n-destacado {
-    margin-top: 0;
-}
-/* ------------------------------------------------------------SECCION TORNEOS------------------------------------------------------- */
-.container-youtube {
-display: flex;
-flex-direction: column;
-}
-.cuadro-copas {
-    display: none;
-}
-/* arrgla seccion tablas */
-.logo-p-tabla {
-    display: flex;
-    flex-direction: column;
-}
-.col-6 {
-    flex: 0 0 auto;
-    width: 100%;
-}
-/* -----------------------------------------SECCION REDES */
-.col-4 {
-    flex: 0 0 auto;
-    width: 100%;
-}
-.container-tiktok {
-    display: none;
-}
+    h1 {
+        font-size: 1.5rem !important;
+    }
 
-/*------------------------ FOOTER -----------------------*/
-.redes-footer{
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-}
-.footer {
-display: flex;
-flex-direction: row;
-}
-.text-area{
-    display: flex;
-}
+    h2 {
+        font-size: 2rem;
+    }
 
-.fieldset-form {
-    display: flex;
-    flex-direction: row;
-}
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .h3-j-destacado {
+        display: none;
+    }
+
+    .h3-n-destacado {
+        margin-top: 0;
+    }
+
+    /* ------------------------------------------------------------SECCION TORNEOS------------------------------------------------------- */
+    .container-youtube {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuadro-copas {
+        display: none;
+    }
+
+    /* arrgla seccion tablas */
+    .logo-p-tabla {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* -----------------------------------------SECCION REDES */
 
 
-/* HTML NOTICIAS */
-.foto-noticia {
-    width: 30rem;
-    height: 20rem;
-    padding: 10px;
-    margin: 25px;
-}
-.li-noticia {
-    list-style: none;
-}
+    /* Col's de Boostrap */
+    /* hacer un extend/import a los COL-X con width:100% para que aplique el no se rompa en celulares */
+    .col-3 {
+        width: 100%;
+    }
+
+    .col-4 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .col-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .col-8 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    /*------------------------ FOOTER -----------------------*/
+    .redes-footer {
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-area {
+        display: flex;
+    }
+
+    .fieldset-form {
+        display: flex;
+        flex-direction: row;
+    }
 
 
-.enlace-notica {
-background-color: red;
-}
+    /* HTML NOTICIAS */
+    .foto-noticia {
+        width: 30rem;
+        height: 20rem;
+        padding: 10px;
+        margin: 25px;
+    }
 
-.parrafo-noticia {
-    font-size: 18px;
-    line-height: 35px;
-    padding: 30px 15px;
-}
-
-.container-p-noticia {
-    width: 100%;
-}
+    .li-noticia {
+        list-style: none;
+    }
 
 
+    .enlace-notica {
+        background-color: red;
+    }
+
+    .parrafo-noticia {
+        font-size: 18px;
+        line-height: 35px;
+        padding: 30px 15px;
+    }
+
+    .container-p-noticia {
+        width: 100%;
+    }
 
 
 
 
 
-/* HTML ACTUALIDAD */
-.card-title {
-    font-size: 1rem;
-}
-.card-text {
-    font-size: 1rem;
-}
 
 
+    /* HTML ACTUALIDAD */
+    .card-title {
+        font-size: 1rem;
+    }
 
+    .card-text {
+        font-size: 1rem;
+    }
+
+
+    /* HTML PLANTEL */
 
 
 

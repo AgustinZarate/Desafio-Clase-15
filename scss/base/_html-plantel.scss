@@ -1,13 +1,17 @@
-.square1, .square2{
+.square1,
+.square2 {
     border-radius: 4px;
-    height: 25.4rem;
-    width: 20rem;
-    margin-top: 1rem;
+    height: 23.5rem;
+    width: 17rem;
+    margin-bottom: 2rem;
+    /* margin-left: 3rem; */
 }
 
 .square1 {
+
     background-color: teal;
     position: relative;
+    height: 23.5rem;
     z-index: 0;
 }
 
@@ -24,15 +28,34 @@
     background-color: transparent;
 }
 
-.arqueros{
-position: relative;
 
-}
-.arqueros1 {
-    position: absolute;
+
+
+
+
+
+
+.Opta-Blank-Arc {
+    fill: rgba(24, 3, 3, 0.329);
 }
 
-.defensores {
-    position: absolute;
-    background-color: red;
+.Opta-Arc {
+    fill: #eb1e2a;
+}
+
+.Opta-Value {
+    fill: #163856;
+    font-size: 28px;
+    text-anchor: middle;
+}
+
+.Opta-Label {
+    fill: #163856;
+    font-size: 12px;
+    text-anchor: middle;
+}
+
+.pases {
+    margin-left: 1rem;
+    font-size: 0.8rem;
 }
