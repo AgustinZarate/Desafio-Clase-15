@@ -471,10 +471,6 @@ form {
   margin: 1rem;
 }
 
-.pais-form {
-  margin: 10px 10px;
-}
-
 .edad-form {
   margin: 1rem;
 }
@@ -501,11 +497,42 @@ form {
   padding: 1rem;
 }
 
+.form__terminos {
+  color: #D62828;
+}
+
 /* --------------------------fin footer---------------------------------- */
 /*--------------------------------------- TIPOGRAFIA---------------------------------------- */
 /* Lista Colores */
 /* carrusel HOVER */
 /* USAR MIXIN PARA DARLE LOS MISMOS ESTILOS PERO CAMBIAR FONDO O ALGO MAS */
+/* Fuentes */
+@font-face {
+  /* Defino el nombre */
+  font-family: "Anton-Regular";
+  /* Ruta de donde cargo mi fuente y el formato de mis navegadores */
+  src: url("../font/Anton-Regular/Anton-Regular.ttf") format("ttf");
+}
+/* Montserrat combina con Anton */
+@font-face {
+  font-family: "Monstserrat-Regular";
+  src: url("../font/Montserrat/Montserrat-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url("../font/Bebas_Neue/BebasNeue-Regular.ttf") format("opentype");
+}
+/*Lato Combina con BebasNue */
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../font/Lato/Lato-Regular.ttf") format("ttf");
+}
+p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+}
+
 h2 {
   background-color: #D62828;
   font-size: 2.5rem;
@@ -513,6 +540,11 @@ h2 {
   padding: 2.5rem;
   color: white;
   text-align: center;
+  font-family: "anton-regular";
+  line-height: 2.5rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  word-spacing: 1rem;
 }
 
 .contenedor-h2 {
@@ -527,6 +559,17 @@ h3 {
   padding: 0.5rem;
   color: white;
   text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 0.3rem;
+  font-family: "BebasNeue-Regular";
+}
+
+/* Parrafo de tablas */
+.p-tablas {
+  font-family: "Monstserrat-Regular";
+  font-size: 18px;
+  line-height: 35px;
+  padding: 30px 15px;
 }
 
 .title-carrousel {
@@ -537,33 +580,25 @@ h5 {
   padding: 0.5rem;
   color: white;
   background-color: #003049;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "BebasNeue-Regular";
   border: 1px solid black;
 }
 
 /* Standar para parrafos */
-p {
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 30px;
-}
-
 .parrafo-noticia {
   list-style-type: none;
   pointer-events: auto;
   margin: 0;
   font-size: 25px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "BebasNeue-Regular";
   line-height: 40px;
   text-indent: 40px;
   padding: 20px;
 }
 
-/* Parrafo de tablas */
-.parrafo-tablas {
-  font-size: 18px;
-  line-height: 35px;
-  padding: 30px 15px;
+.p-info {
+  font-family: "Monstserrat-Regular";
+  font-size: 2.5rem;
 }
 
 a {

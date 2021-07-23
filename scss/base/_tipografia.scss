@@ -1,7 +1,29 @@
 
 @import "../components/variables";
 /* USAR MIXIN PARA DARLE LOS MISMOS ESTILOS PERO CAMBIAR FONDO O ALGO MAS */
+/* Fuentes */
+@font-face {
+    /* Defino el nombre */
+    font-family: "Anton-Regular";
+    /* Ruta de donde cargo mi fuente y el formato de mis navegadores */
+    src: url("../font/Anton-Regular/Anton-Regular.ttf") format("ttf");
+}
+/* Montserrat combina con Anton */
+@font-face {
+    font-family: "Monstserrat-Regular" ;
+    src: url("../font/Montserrat/Montserrat-Regular.ttf") format("ttf");
+}
 
+
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url("../font/Bebas_Neue/BebasNeue-Regular.ttf") format("opentype");
+}
+/*Lato Combina con BebasNue */
+@font-face {
+    font-family:"Lato-Regular";
+    src: url("../font/Lato/Lato-Regular.ttf") format("ttf");
+}
 @mixin  encabezados ($bg-color, $font, $margin, $padding) {
     background-color: $bg-color;
     font-size: $font;
@@ -10,8 +32,19 @@
     color: white;
     text-align: center;
 }
+
+p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
 h2 {
-    @include encabezados(#D62828, 2.5rem, auto, 2.5rem)
+    @include encabezados(#D62828, 2.5rem, auto, 2.5rem);
+    font-family: "anton-regular";
+    line-height: 2.5rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    word-spacing: 1rem;
 }
 
 
@@ -22,44 +55,52 @@ h2 {
 
 /* subtitulo de seccion */
 h3 {
-    @include encabezados(#003049, 2.0rem, 0.5rem, 0.5rem)
+    @include encabezados(#003049, 2.0rem, 0.5rem, 0.5rem);
+    letter-spacing: 2px;
+    word-spacing: 0.3rem;
+    font-family: map-get($maps, bebasneue );
 }
+/* Parrafo de tablas */
+.p-tablas {
+    font-family: map-get($maps, montserrat );
+    font-size: 18px;
+    line-height: 35px;
+    padding: 30px 15px;
+}
+
  .title-carrousel {
     border-radius: 20px;
+
+    
  }
 
 h5 {
     padding: 0.5rem;
     color: map-get($maps, white );
     background-color: nth($bg-color, 5 );
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "BebasNeue-Regular";
     border: map-get($maps , border-1 )
 }
 /* Standar para parrafos */
-p {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
-}
+
 
 .parrafo-noticia {
     list-style-type: none;
     pointer-events: auto;
     margin: 0;
     font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "BebasNeue-Regular";
     line-height: 40px;
     text-indent: 40px;
     padding: 20px;
 }
 
-/* Parrafo de tablas */
-.parrafo-tablas {
-    font-size: 18px;
-    line-height: 35px;
-    padding: 30px 15px;
-}
 
+
+.p-info {
+    font-family: "Monstserrat-Regular";
+    font-size: 2.5rem;
+}
 a {
     text-decoration: none;
     color: map-get($maps, white );
