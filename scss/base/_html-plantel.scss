@@ -8,13 +8,22 @@
 }
 
 .square1 {
-
-    background-color: teal;
     position: relative;
     height: 23.5rem;
     z-index: 0;
 }
-
+.bg-arq {
+    background-color: map-get($maps, yellow);
+}
+.bg-def {
+    background-color: map-get($maps, light-blue );
+}
+.bg-med {
+    background-color: map-get($maps, green );
+}
+.bg-del{
+    background-color: map-get($maps, orange );
+}
 .square2 {
     background-color: steelblue;
     transition: all 0.8s;

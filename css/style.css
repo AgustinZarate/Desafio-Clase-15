@@ -33,6 +33,10 @@ body {
   background-color: white;
 }
 
+.active {
+  background-color: white;
+}
+
 /* -------------------------------MAIN------------------------------------------------------ */
 /*------------------------------------- PARALLAX ---------------------------*/
 .btn-form, .btn {
@@ -253,7 +257,7 @@ table {
 
 .card {
   padding: 1rem;
-  box-shadow: 20px 15px 25px rgba(0, 0, 0, 0.856);
+  /*     box-shadow: 20px 15px 25px nth($bg-color, 9 ); */
 }
 
 .img-card {
@@ -333,10 +337,25 @@ table {
 }
 
 .square1 {
-  background-color: teal;
   position: relative;
   height: 23.5rem;
   z-index: 0;
+}
+
+.bg-arq {
+  background-color: #FCBF49;
+}
+
+.bg-def {
+  background-color: #168aad;
+}
+
+.bg-med {
+  background-color: #6ede8a;
+}
+
+.bg-del {
+  background-color: #F77F00;
 }
 
 .square2 {
@@ -584,12 +603,25 @@ h3 {
   border-radius: 20px;
 }
 
+h4 {
+  background-color: #F77F00;
+  font-size: 2rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+  text-align: center;
+}
+
 h5 {
   padding: 0.5rem;
   color: white;
-  background-color: #003049;
+  background-color: #D62828;
   font-family: "BebasNeue-Regular";
   border: 1px solid black;
+}
+
+.card-title a:hover {
+  color: #003049;
 }
 
 .parrafo-noticia {
@@ -611,6 +643,18 @@ h5 {
 a {
   text-decoration: none;
   color: white;
+}
+
+dt {
+  color: #003049;
+  font-family: "BebasNeue-Regular";
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+dd {
+  color: white;
+  font-family: "Lato-Regular";
 }
 
 /* -------------------------------@media query------------------------------------------- */
