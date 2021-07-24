@@ -294,7 +294,6 @@ table {
 }
 
 .foto-noticia {
-  font-family: Georgia, "Times New Roman", Times, serif;
   list-style-type: none;
   pointer-events: auto;
   background-color: white;
@@ -525,8 +524,9 @@ form {
 /*Lato Combina con BebasNue */
 @font-face {
   font-family: "Lato-Regular";
-  src: url("../font/Lato/Lato-Regular.ttf") format("ttf");
+  src: url("../font/Lato/Lato-Regular.ttf") format("opentype");
 }
+/* Standar para parrafos */
 p {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -564,6 +564,14 @@ h3 {
   font-family: "BebasNeue-Regular";
 }
 
+.separador {
+  background-color: #D62828;
+}
+
+.card a:hover {
+  color: #D62828;
+}
+
 /* Parrafo de tablas */
 .p-tablas {
   font-family: "Monstserrat-Regular";
@@ -584,13 +592,12 @@ h5 {
   border: 1px solid black;
 }
 
-/* Standar para parrafos */
 .parrafo-noticia {
   list-style-type: none;
   pointer-events: auto;
   margin: 0;
   font-size: 25px;
-  font-family: "BebasNeue-Regular";
+  font-family: "Lato-Regular";
   line-height: 40px;
   text-indent: 40px;
   padding: 20px;

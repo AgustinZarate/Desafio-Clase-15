@@ -22,7 +22,7 @@
 /*Lato Combina con BebasNue */
 @font-face {
     font-family:"Lato-Regular";
-    src: url("../font/Lato/Lato-Regular.ttf") format("ttf");
+    src: url("../font/Lato/Lato-Regular.ttf") format("opentype");
 }
 @mixin  encabezados ($bg-color, $font, $margin, $padding) {
     background-color: $bg-color;
@@ -32,7 +32,7 @@
     color: white;
     text-align: center;
 }
-
+/* Standar para parrafos */
 p {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -60,6 +60,16 @@ h3 {
     word-spacing: 0.3rem;
     font-family: map-get($maps, bebasneue );
 }
+.separador {
+    background-color: map-get($maps, red );
+}
+.card {
+    a {
+        &:hover {
+            color: map-get($maps , red );
+        }
+    }
+}
 /* Parrafo de tablas */
 .p-tablas {
     font-family: map-get($maps, montserrat );
@@ -78,10 +88,10 @@ h5 {
     padding: 0.5rem;
     color: map-get($maps, white );
     background-color: nth($bg-color, 5 );
-    font-family: "BebasNeue-Regular";
+    font-family: map-get($maps, bebasneue );
     border: map-get($maps , border-1 )
 }
-/* Standar para parrafos */
+
 
 
 .parrafo-noticia {
@@ -89,7 +99,7 @@ h5 {
     pointer-events: auto;
     margin: 0;
     font-size: 25px;
-    font-family: "BebasNeue-Regular";
+    font-family: map-get($maps, lato );
     line-height: 40px;
     text-indent: 40px;
     padding: 20px;
@@ -98,7 +108,7 @@ h5 {
 
 
 .p-info {
-    font-family: "Monstserrat-Regular";
+    font-family: map-get($maps, montserrat );
     font-size: 2.5rem;
 }
 a {
