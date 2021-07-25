@@ -27,7 +27,14 @@
     .btn-primary {
         display: none;
     }
-
+.p-info {
+    font-size: 1.5rem;
+}
+.title-carrousel {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    background-color: #d6282875;
+}
     .sec-destacados {
         display: flex;
         flex-direction: column;
@@ -101,6 +108,10 @@
         flex: 0 0 auto;
         width: 100%;
     }
+
+    .centrar-redes {
+        margin-left: 0.8rem;
+    }
     /*------------------------ FOOTER -----------------------*/
     .redes-footer {
         display: flex;
@@ -166,7 +177,7 @@
     }
 
 
-    /* HTML PLANTEL */
+
 
 
 

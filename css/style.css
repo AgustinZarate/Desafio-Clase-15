@@ -257,7 +257,6 @@ table {
 
 .card {
   padding: 1rem;
-  /*     box-shadow: 20px 15px 25px nth($bg-color, 9 ); */
 }
 
 .img-card {
@@ -552,6 +551,12 @@ p {
   padding: 30px;
 }
 
+/* parrafo html nosotros */
+.p-nosotros {
+  font-family: "Monstserrat-Regular";
+  font-style: italic;
+}
+
 h2 {
   background-color: #D62828;
   font-size: 2.5rem;
@@ -705,6 +710,16 @@ dd {
     display: none;
   }
 
+  .p-info {
+    font-size: 1.5rem;
+  }
+
+  .title-carrousel {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    background-color: #d6282875;
+  }
+
   .sec-destacados {
     display: flex;
     flex-direction: column;
@@ -775,6 +790,10 @@ dd {
     width: 100%;
   }
 
+  .centrar-redes {
+    margin-left: 0.8rem;
+  }
+
   /*------------------------ FOOTER -----------------------*/
   .redes-footer {
     display: flex;
@@ -830,8 +849,6 @@ dd {
   .card-text {
     font-size: 1rem;
   }
-
-  /* HTML PLANTEL */
 }
 /*------------------------------------ ERROR 404 --------------------------------*/
 .h1-error {
