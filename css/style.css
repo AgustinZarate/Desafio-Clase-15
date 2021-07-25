@@ -758,6 +758,11 @@ dd {
     flex-direction: column;
   }
 
+  .youtube {
+    width: 100%;
+    height: 100%;
+  }
+
   .cuadro-copas {
     display: none;
   }
